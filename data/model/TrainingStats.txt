@@ -1,21 +1,26 @@
-Train on 4500 samples, validate on 500 samples
+Train on 4800 samples, validate on 1200 samples
 Epoch 1/10
-4500/4500 [==============================] - 61s 13ms/sample - loss: 0.6725 - accuracy: 0.5778 - val_loss: 0.5531 - val_accuracy: 0.7580
+4800/4800 [==============================] - 66s 14ms/sample - loss: 0.6873 - accuracy: 0.5437 - val_loss: 0.6781 - val_accuracy: 0.5308
 Epoch 2/10
-4500/4500 [==============================] - 61s 13ms/sample - loss: 0.4034 - accuracy: 0.8469 - val_loss: 0.2722 - val_accuracy: 0.9000
+4800/4800 [==============================] - 67s 14ms/sample - loss: 0.6752 - accuracy: 0.5794 - val_loss: 0.6690 - val_accuracy: 0.6000
 Epoch 3/10
-4500/4500 [==============================] - 61s 13ms/sample - loss: 0.2624 - accuracy: 0.9176 - val_loss: 0.2268 - val_accuracy: 0.9160
+4800/4800 [==============================] - 66s 14ms/sample - loss: 0.5142 - accuracy: 0.7406 - val_loss: 0.2955 - val_accuracy: 0.8967
 Epoch 4/10
-4500/4500 [==============================] - 61s 14ms/sample - loss: 0.2516 - accuracy: 0.9249 - val_loss: 0.2332 - val_accuracy: 0.9160
+4800/4800 [==============================] - 65s 14ms/sample - loss: 0.2591 - accuracy: 0.9127 - val_loss: 0.2958 - val_accuracy: 0.9367
 Epoch 5/10
-4500/4500 [==============================] - 60s 13ms/sample - loss: 0.2288 - accuracy: 0.9309 - val_loss: 0.2180 - val_accuracy: 0.9300
+4800/4800 [==============================] - 66s 14ms/sample - loss: 0.2284 - accuracy: 0.9240 - val_loss: 0.2841 - val_accuracy: 0.9367
 Epoch 6/10
-4500/4500 [==============================] - 60s 13ms/sample - loss: 0.2180 - accuracy: 0.9353 - val_loss: 0.2359 - val_accuracy: 0.9220
+4800/4800 [==============================] - 65s 14ms/sample - loss: 0.2408 - accuracy: 0.9146 - val_loss: 0.2588 - val_accuracy: 0.9242
 Epoch 7/10
-4500/4500 [==============================] - 61s 13ms/sample - loss: 0.2090 - accuracy: 0.9318 - val_loss: 0.2196 - val_accuracy: 0.9240
+4800/4800 [==============================] - 65s 14ms/sample - loss: 0.2040 - accuracy: 0.9319 - val_loss: 0.2698 - val_accuracy: 0.9200
 Epoch 8/10
-4500/4500 [==============================] - 61s 14ms/sample - loss: 0.1807 - accuracy: 0.9416 - val_loss: 0.2569 - val_accuracy: 0.9060
+4800/4800 [==============================] - 66s 14ms/sample - loss: 0.1943 - accuracy: 0.9323 - val_loss: 0.2508 - val_accuracy: 0.9392
 Epoch 9/10
-4500/4500 [==============================] - 61s 14ms/sample - loss: 0.1649 - accuracy: 0.9460 - val_loss: 0.2202 - val_accuracy: 0.9220
+4800/4800 [==============================] - 66s 14ms/sample - loss: 0.1585 - accuracy: 0.9463 - val_loss: 0.2200 - val_accuracy: 0.9283
 Epoch 10/10
-4500/4500 [==============================] - 65s 14ms/sample - loss: 0.1393 - accuracy: 0.9496 - val_loss: 0.2094 - val_accuracy: 0.9240
+4800/4800 [==============================] - 66s 14ms/sample - loss: 0.1415 - accuracy: 0.9471 - val_loss: 0.2224 - val_accuracy: 0.9383
+
+Model evaluate
+6000/6000 [==============================] - 27s 5ms/sample - loss: 0.1421 - accuracy: 0.9588
+Loss: 0.14, Accuracy: 0.9599999785423279
+

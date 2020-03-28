@@ -1,4 +1,4 @@
-Model's name: Malaria-CNN-1585405268
+Model's name: Malaria-CNN-1585423128
 Model: "sequential"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
@@ -22,3 +22,4 @@ dense (Dense)                (None, 1)                 12545
 Total params: 88,193
 Trainable params: 88,193
 Non-trainable params: 0
+

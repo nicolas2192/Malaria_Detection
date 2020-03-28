@@ -121,12 +121,13 @@ def prediction(model, image_path, categories, pixels=130):
 
     # Display results
     result = categories[int(y[0][0])]
+    print(f"The following image: {image_path} was categorized as: {result}")
 
     fig, ax = plt.subplots()
     label_font = {"fontname": "Arial", "fontsize": 12}
     plt.imshow(img)
     fig.suptitle(result, fontsize=18)
     ax.set_title(image_path, fontdict=label_font)
-    plt.show()
+    # plt.show()
 
     return img, result, image_path
