@@ -1,0 +1,1 @@
+The main script has the option to save and load binary data into this folder (../data/binary/data.pkl). This option is currently disabled, however, could be switched back on by uncommenting main.py lines 22 and 23

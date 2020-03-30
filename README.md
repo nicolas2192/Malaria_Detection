@@ -37,7 +37,7 @@ Model: "sequential"
 | Layer (type)                 | Output Shape              | Param # | 
 | ---------------------------- | ------------------------- | ------- |
 | conv2d (Conv2D)              | (None, 128, 128, 64)      | 1792    |
-| max_pooling2d (MaxPooling2D) | (None, 64, 64, 64)        | 0       |  
+| max_pooling2d (MaxPooling2D) | (None, 64, 64, 64)        | 0       |
 | conv2d_1 (Conv2D)            | (None, 62, 62, 64)        | 36928   | 
 | max_pooling2d_1 (MaxPooling2 | (None, 31, 31, 64)        | 0       | 
 | conv2d_2 (Conv2D)            | (None, 29, 29, 64)        | 36928   | 
@@ -89,20 +89,17 @@ Performance could be increased by training the same model with all 27.558 availa
 ## :wrench: Configuration
 Install python and mandatory modules
 
-Use the following commands if you are using the anaconda distribution.
+If you are using the anaconda distribution. Run the following command to create a new environment named malaria_env
 
 ```
-conda create -n new_env_name_here
-conda activate new_env_name_here
-conda install python=3.7
-pip install -r requirements.txt
+conda env create -f requirements.yml
 ```
 
 **Note:** Environment managers differ from one another. It's strongly recommended to check its documentation.
 
 ## :snake: Running the main.py script
 
-Running main.py on your terminal you won't get you any results. You should use one or a combination of the following argparse flags:
+Running main.py on your terminal alone won't get you any results. You should use one or a combination of the following flags:
 
 **Training** -t or --train: trains the model using all data found in the data/raw folder. Once trained, model weights and parameters are saved in the data/model folder as a model.h5 file.
 
