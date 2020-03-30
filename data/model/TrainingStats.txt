@@ -20,7 +20,7 @@ Epoch 9/10
 Epoch 10/10
 4800/4800 [==============================] - 66s 14ms/sample - loss: 0.1415 - accuracy: 0.9471 - val_loss: 0.2224 - val_accuracy: 0.9383
 
-Model evaluate
+Model performance
 6000/6000 [==============================] - 27s 5ms/sample - loss: 0.1421 - accuracy: 0.9588
-Loss: 0.14, Accuracy: 0.9599999785423279
+Loss: 0.14, Accuracy: 0.95
 

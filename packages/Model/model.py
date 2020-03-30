@@ -1,5 +1,5 @@
 from tensorflow.keras.models import Sequential, load_model
-from tensorflow.keras.layers import Dense, Flatten, Dropout, Activation, Conv2D, MaxPooling2D
+from tensorflow.keras.layers import Dense, Flatten, Conv2D, MaxPooling2D
 from tensorflow.keras.callbacks import TensorBoard
 import numpy as np
 import cv2 as cv
@@ -38,7 +38,7 @@ def model_setup(X, y):
     # Adding flattened dense layer
     model.add(Flatten())
 
-    # Adding output layer, 1 unit, activation softmax
+    # Adding output layer, 1 unit, activation sigmoid
     model.add(Dense(1, activation="sigmoid"))
 
     # Setting up tensorboard logs

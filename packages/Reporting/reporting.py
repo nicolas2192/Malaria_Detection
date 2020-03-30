@@ -4,7 +4,7 @@ import os
 
 def pdf_generation(img, result, image_path):
     """
-    Saves analysed cell in a pdf
+    Saves analyzed cell in a pdf
     :param img: Image array that was previously analysed
     :param result: Prediction result, Parasitized or Uninfected
     :param image_path: Image path and name, used to name the pdf file
