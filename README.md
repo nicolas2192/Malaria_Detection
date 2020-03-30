@@ -23,7 +23,7 @@ Tensorboard was used to compare different models taking the one that best perfor
 The training was done using 6.000 colored images of the same dimension 130x130. It was evenly split into 3.000 Parasitized images and 3.000 Uninfected images. After training, model loss and accuracy were 0.14 and 0.95 respectively.
 
 <p align="center">
-  <img width="400" height="400" src="readme/flowchart.jpg">
+  <img width="866" height="195" src="readme/flowchart.png">
 </p>
 
 ## :chart_with_upwards_trend: Model Stats
@@ -85,6 +85,7 @@ Epoch 10/10 -
 
 6000/6000  - 27s 5ms/sample - loss: 0.1421 - accuracy: 0.9588
 
+Performance could be increased by training the same model with all 27.558 available images. Since tensorboard functionality is already implemented, additional tweaks could be easily added to improve performance.
 ## :wrench: Configuration
 Install python and mandatory modules
 
@@ -152,7 +153,7 @@ PDF screenshot:
 
 Data set can be found here: [Malaria data set](https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria "Kaggle Data Set")
 
-It contains a total of 27558 images split evenly in two categories: Parasitized and Uninfected
+It contains a total of 27.558 images split evenly in two categories: Parasitized and Uninfected
 
 
 ## :file_folder: Folder structure
