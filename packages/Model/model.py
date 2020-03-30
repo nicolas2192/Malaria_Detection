@@ -89,9 +89,8 @@ def load_model_h5(model_path="data/model", model_name="model"):
     """
     try:
         # Loading H5 file
-        print(os.path.join(model_path, f"{model_name}.h5"))
         loaded_model = load_model(os.path.join(model_path, f"{model_name}.h5"))
-        print("Model loaded successfully")
+        print(f"Model loaded successfully -> {model_name}.h5")
         return loaded_model
     except Exception as e:
         print("Model couldn't be loaded")

@@ -26,8 +26,8 @@ def load_data(directory, categories, pixels):
         else:
             files = os.listdir(path)
 
-        # for i in range(len(files) - 1): # Uncomment this line to load all available images.
-        for i in range(3000):
+        # for i in range(3000):  # Uncomment this line to load a specific number of images.
+        for i in range(len(files) - 1):  # Uncomment this line to load all available images.
             # Skip corrupt images
             try:
                 img = cv.imread(os.path.join(path, files[i]))  # read image into an array
