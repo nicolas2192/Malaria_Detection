@@ -159,31 +159,55 @@ It contains a total of 27558 images split evenly in two categories: Parasitized 
 
 ## :file_folder: Folder structure
 ```
-└── Diamonds_Appraisal
+└── Malaria_Detection
     ├── .gitignore
     ├── requirements.txt
     ├── README.md
     ├── main.py
-    ├── notebooks
-    │   └── Pipeline.ipynb
+    ├── readme
+    │   ├── ironhacklogo.png
+    │   └── pdf_result.png
     ├── packages
-    │   ├── GUI
-    │   │   └── GUI.py
-    │   └── Model
-    │   │   └── model.py
+    │   ├── Acquisition
+    │   |   ├── acquisition.py
+    │   │   └── terminal_cmd.py
+    │   ├── Model
+    │   |   └── model.py
+    │   ├── Reporting
+    │   |   └── reporting.py
+    │   └── Wrangling
+    │       └── fix_data.py
     └── data
+        ├── binary
+        ├── logs
+        │   └── Malaria-CNN-1585423128
+        ├── model
+        |   ├── model.h5
+        |   ├── ModelSummary.txt
+        │   └── TrainingStats.txt
+        ├── predictions
+        │   └── Parasitized-2-1.pdf
         ├── raw
-        │   ├── diamonds.csv
-        │   ├── diamonds_test.csv
-        │   └── diamonds_train.csv
-        └── model_binary
-            └── RandomForest.pkl
+        |   ├── Parasitized
+        │   └── Uninfected
+        └── test
+            ├── Parasitized-1.png
+            ├── Parasitized-2.png
+            ├── Parasitized-3.png
+            ├── Parasitized-4.png
+            ├── Parasitized-5.png
+            ├── Uninfected-1.png
+            ├── Uninfected-2.png
+            ├── Uninfected-3.png
+            ├── Uninfected-4.png
+            └── Uninfected-5.png
 ```
 
 ## :star: Acknowledgements
 <p align="left">
-  <img width="185" height="200" src="readme/ironhacklogo.png">
+  <img width="37" height="40" src="readme/ironhacklogo.png">
 </p>
+
 [IronHack](https://www.ironhack.com/en "IronHack")
 
 ## :love_letter: Contact info
