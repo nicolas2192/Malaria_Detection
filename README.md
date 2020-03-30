@@ -1,4 +1,4 @@
-# Convolutional Neural Network that detects Malaria-infected cells
+# CNN that detects Malaria-infected cells
 
 ## :boom: Malaria-infected cell detection. Convolutional Neural Network
 
@@ -41,11 +41,7 @@ Model: "sequential"
 | flatten (Flatten)            | (None, 12544)             | 0       | 
 | dense (Dense)                | (None, 1)                 | 12545   | 
 
-Total params: 88,193
-
-Trainable params: 88,193
-
-Non-trainable params: 0
+Total params: 88,193, Trainable params: 88,193, Non-trainable params: 0
 
 ### Training
 
@@ -85,8 +81,6 @@ Epoch 10/10 -
 
 6000/6000  - 27s 5ms/sample - loss: 0.1421 - accuracy: 0.9588
 
-Loss: 0.14, Accuracy: 0.95
-
 ## :wrench: Configuration
 Install python and mandatory modules
 
@@ -103,7 +97,7 @@ pip install -r requirements.txt
 
 ## :snake: Running the main.py script
 
-By simply running main.py on your terminal you won't get any results. You should use one or a combination of the following argparse flags:
+Running main.py on your terminal you won't get you any results. You should use one or a combination of the following argparse flags:
 
 **Training** -t or --train: trains the model using all data found in the data/raw folder. Once trained, model weights and parameters are saved in the data/model folder as a model.h5 file.
 
@@ -111,7 +105,7 @@ Terminal command `python main.py -t`
 
 **Predicting Images** -p or --predict: loads a previously trained model and analyzes a cell's image. Diagnosis will be print to the terminal. If no image is selected, it will analyze Parasitized-2.png (default image example). This and 9 more image examples can be found in the data/test folder.
 
-Terminal `python main.py -p`
+Terminal command: `python main.py -p`
 
 Terminal result:
 ```
@@ -122,7 +116,7 @@ The following image: data/test/Parasitized-2.png was categorized as: Parasitized
 
 **Image Selection** -i or --image: selects an image file. This command should be used alongside -p. Picking an image is mandatory if this flag is used.
 
-Terminal `python main.py -pi data/test/Uninfected-5.png`
+Terminal command: `python main.py -pi data/test/Uninfected-5.png`
 
 Terminal result:
 ```
@@ -133,7 +127,7 @@ The following image: data/test/Uninfected-5.png was categorized as: Uninfected
 
 **PDF Report** -r or --report: generates a pdf file and saves it to data/predictions. This command should be used alongside -pi or -p.
 
-Terminal `python main.py -pri data/test/Uninfected-3.png`
+Terminal command: `python main.py -pri data/test/Uninfected-3.png`
 
 Terminal result:
 ```
@@ -204,11 +198,9 @@ It contains a total of 27558 images split evenly in two categories: Parasitized 
 ```
 
 ## :star: Acknowledgements
-<p align="left">
-  <img width="37" height="40" src="readme/ironhacklogo.png">
-</p>
+<img align="left" width="40" height="40" src="readme/ironhacklogo.png">
 
-[IronHack](https://www.ironhack.com/en "IronHack")
+[IronHack](https://www.ironhack.com/en "IronHack main webpage")
 
 ## :love_letter: Contact info
 Any doubt? Advice?  Drop me a line! :smirk:
