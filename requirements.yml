@@ -1,4 +1,4 @@
-name: t
+name: malaria_env
 channels:
   - conda-forge
   - defaults

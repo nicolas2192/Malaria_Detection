@@ -108,9 +108,8 @@ def prediction(model, image_path, categories, pixels=130):
     """
     try:
         img = cv.imread(image_path)
-        # test_img = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
         resized_img = cv.resize(img, (pixels, pixels))
-        print("Image loaded successfully")
+        print(f"Image loaded successfully -> {image_path}")
     except Exception as e:
         print(f"Error reading file {image_path}")
         exit()
