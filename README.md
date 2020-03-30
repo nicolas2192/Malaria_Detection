@@ -1,5 +1,4 @@
-# Malaria Detection
-Neural Network that detects whether a cell is infected or not by Malaria
+# Convolutional Neural Network that detects Malaria-infected cells
 
 ## :boom: Malaria-infected cell detection. Convolutional Neural Network
 
@@ -28,6 +27,7 @@ The training was done using 6.000 colored images of the same dimension 130x130. 
 ### Fitting
 
 Model's name: Malaria-CNN-1585423128
+
 Model: "sequential"
 
 | Layer (type)                 | Output Shape              | Param # | 
@@ -42,45 +42,49 @@ Model: "sequential"
 | dense (Dense)                | (None, 1)                 | 12545   | 
 
 Total params: 88,193
+
 Trainable params: 88,193
+
 Non-trainable params: 0
 
 ### Training
 
 Train on 4800 samples, validate on 1200 samples
 
-Epoch 1/10
-4800/4800 [==============================] - 66s 14ms/sample - loss: 0.6873 - accuracy: 0.5437 - val_loss: 0.6781 - val_accuracy: 0.5308
+Epoch 1/10 -
+4800/4800  - 66s 14ms/sample - loss: 0.6873 - accuracy: 0.5437 - val_loss: 0.6781 - val_accuracy: 0.5308
 
-Epoch 2/10
-4800/4800 [==============================] - 67s 14ms/sample - loss: 0.6752 - accuracy: 0.5794 - val_loss: 0.6690 - val_accuracy: 0.6000
+Epoch 2/10 -
+4800/4800  - 67s 14ms/sample - loss: 0.6752 - accuracy: 0.5794 - val_loss: 0.6690 - val_accuracy: 0.6000
 
-Epoch 3/10
-4800/4800 [==============================] - 66s 14ms/sample - loss: 0.5142 - accuracy: 0.7406 - val_loss: 0.2955 - val_accuracy: 0.8967
+Epoch 3/10 -
+4800/4800  - 66s 14ms/sample - loss: 0.5142 - accuracy: 0.7406 - val_loss: 0.2955 - val_accuracy: 0.8967
 
-Epoch 4/10
-4800/4800 [==============================] - 65s 14ms/sample - loss: 0.2591 - accuracy: 0.9127 - val_loss: 0.2958 - val_accuracy: 0.9367
+Epoch 4/10 -
+4800/4800  - 65s 14ms/sample - loss: 0.2591 - accuracy: 0.9127 - val_loss: 0.2958 - val_accuracy: 0.9367
 
-Epoch 5/10
-4800/4800 [==============================] - 66s 14ms/sample - loss: 0.2284 - accuracy: 0.9240 - val_loss: 0.2841 - val_accuracy: 0.9367
+Epoch 5/10 -
+4800/4800  - 66s 14ms/sample - loss: 0.2284 - accuracy: 0.9240 - val_loss: 0.2841 - val_accuracy: 0.9367
 
-Epoch 6/10
-4800/4800 [==============================] - 65s 14ms/sample - loss: 0.2408 - accuracy: 0.9146 - val_loss: 0.2588 - val_accuracy: 0.9242
+Epoch 6/10 -
+4800/4800  - 65s 14ms/sample - loss: 0.2408 - accuracy: 0.9146 - val_loss: 0.2588 - val_accuracy: 0.9242
 
-Epoch 7/10
-4800/4800 [==============================] - 65s 14ms/sample - loss: 0.2040 - accuracy: 0.9319 - val_loss: 0.2698 - val_accuracy: 0.9200
+Epoch 7/10 -
+4800/4800  - 65s 14ms/sample - loss: 0.2040 - accuracy: 0.9319 - val_loss: 0.2698 - val_accuracy: 0.9200
 
-Epoch 8/10
-4800/4800 [==============================] - 66s 14ms/sample - loss: 0.1943 - accuracy: 0.9323 - val_loss: 0.2508 - val_accuracy: 0.9392
+Epoch 8/10 -
+4800/4800  - 66s 14ms/sample - loss: 0.1943 - accuracy: 0.9323 - val_loss: 0.2508 - val_accuracy: 0.9392
 
-Epoch 9/10
-4800/4800 [==============================] - 66s 14ms/sample - loss: 0.1585 - accuracy: 0.9463 - val_loss: 0.2200 - val_accuracy: 0.9283
+Epoch 9/10 -
+4800/4800  - 66s 14ms/sample - loss: 0.1585 - accuracy: 0.9463 - val_loss: 0.2200 - val_accuracy: 0.9283
 
-Epoch 10/10
-4800/4800 [==============================] - 66s 14ms/sample - loss: 0.1415 - accuracy: 0.9471 - val_loss: 0.2224 - val_accuracy: 0.9383
+Epoch 10/10 -
+4800/4800  - 66s 14ms/sample - loss: 0.1415 - accuracy: 0.9471 - val_loss: 0.2224 - val_accuracy: 0.9383
 
-Model performance
-6000/6000 [==============================] - 27s 5ms/sample - loss: 0.1421 - accuracy: 0.9588
+### Model performance
+
+6000/6000  - 27s 5ms/sample - loss: 0.1421 - accuracy: 0.9588
+
 Loss: 0.14, Accuracy: 0.95
 
 ## :wrench: Configuration
@@ -142,18 +146,18 @@ Image saved as a pdf at data/predictions/Uninfected-3-3.pdf
 PDF screenshot: 
 
 <p align="center">
-  <img width="460" height="300" src="readme/pdf_result.png">
+  <img width="300" height="300" src="readme/pdf_result.png">
 </p>
 
 
 ## :information_source: Data set info
 
-Data set can be found here: [I'm an inline-style link with title](https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria "Google's Homepage")
+Data set can be found here: [Malaria data set](https://www.kaggle.com/iarunava/cell-images-for-detecting-malaria "Kaggle Data Set")
 
 It contains a total of 27558 images split evenly in two categories: Parasitized and Uninfected
 
 
-## :file_folder: **Folder structure**
+## :file_folder: Folder structure
 ```
 └── Diamonds_Appraisal
     ├── .gitignore
@@ -176,8 +180,11 @@ It contains a total of 27558 images split evenly in two categories: Parasitized 
             └── RandomForest.pkl
 ```
 
-## :interrobang: **Custom models**
-Check the Pipeline.ipynb notebook or the model.py script to get a broad idea. These two files have all necessary steps to create, test, enhance and save your modules.
+## :star: Acknowledgements
+<p align="left">
+  <img width="185" height="200" src="readme/ironhacklogo.png">
+</p>
+[IronHack](https://www.ironhack.com/en "IronHack")
 
-## :love_letter: **Contact info**
+## :love_letter: Contact info
 Any doubt? Advice?  Drop me a line! :smirk:
