@@ -1,4 +1,4 @@
-# CNN that detects Malaria-infected cells
+# Malaria_Detection CNN
 
 ## :boom: Malaria-infected cell detection. Convolutional Neural Network
 
@@ -21,6 +21,10 @@ The fitting process iterate through 10 epochs, takes a batch size of 32 and has 
 Tensorboard was used to compare different models taking the one that best performed. All training run logs are saved to data/logs.
 
 The training was done using 6.000 colored images of the same dimension 130x130. It was evenly split into 3.000 Parasitized images and 3.000 Uninfected images. After training, model loss and accuracy were 0.14 and 0.95 respectively.
+
+<p align="center">
+  <img width="400" height="400" src="readme/flowchart.jpg">
+</p>
 
 ## :chart_with_upwards_trend: Model Stats
 
@@ -140,7 +144,7 @@ Image saved as a pdf at data/predictions/Uninfected-3-3.pdf
 PDF screenshot: 
 
 <p align="center">
-  <img width="300" height="300" src="readme/pdf_result.png">
+  <img width="400" height="400" src="readme/pdf_result.png">
 </p>
 
 
