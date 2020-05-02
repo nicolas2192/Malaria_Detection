@@ -2,10 +2,10 @@
 
 ## :boom: Malaria-infected cell detection. Convolutional Neural Network
 
-This project's idea came from the desire to apply deep learning knowledge into a real-life problem. This Neural Network goal is to determine whether a cell has been infected by Malaria. Cell's diagnosis is delivered in a pdf file next to the original cell image.
+This project's idea came from the desire to apply deep learning knowledge into a real-life problem. This Neural Network goal is to determine whether a cell has been infected by Malaria. Cell's diagnosis is delivered in a pdf file alongside the original cell image.
 
 ## :computer: Technology stack
-Wrote in python 3. Main modules:
+Written in python 3. Main modules:
 
 **OpenCV** -> Image reading and handling
 
@@ -86,10 +86,12 @@ Epoch 10/10 -
 6000/6000  - 27s 5ms/sample - loss: 0.1421 - accuracy: 0.9588
 
 Performance could be increased by training the same model with all 27.558 available images. Since tensorboard functionality is already implemented, additional tweaks could be easily added to improve performance.
-## :wrench: Configuration
-Install python and mandatory modules
 
-If you are using the anaconda distribution. Run the following command to create a new environment named malaria_env
+## :wrench: Configuration
+
+Install python 3.7 and mandatory dependencies listed in the requirements file.
+
+If you are using the anaconda distribution. Run the following command to create a new environment named "malaria_env"
 
 ```
 conda env create -f requirements.yml
@@ -101,7 +103,7 @@ conda env create -f requirements.yml
 
 Running main.py on your terminal alone won't get you any results. You should use one or a combination of the following flags:
 
-**Training** -t or --train: trains the model using all data found in the data/raw folder. Once trained, model weights and parameters are saved in the data/model folder as a model.h5 file.
+**Training** -t or --train: trains the model using image data found in the data/raw folder. Once trained, model weights and parameters are saved in the data/model folder as a model.h5 file.
 
 Terminal command `python main.py -t`
 
@@ -116,7 +118,7 @@ Image loaded successfully
 The following image: data/test/Parasitized-2.png was categorized as: Parasitized
 ```
 
-**Image Selection** -i or --image: selects an image file. This command should be used alongside -p. Picking an image is mandatory if this flag is used.
+**Image Selection** -i or --image: selects an image file. This command should be used alongside -p. Picking an image is mandatory if this flag is to be used.
 
 Terminal command: `python main.py -pi data/test/Uninfected-5.png`
 
@@ -200,9 +202,9 @@ It contains a total of 27.558 images split evenly in two categories: Parasitized
 ```
 
 ## :star: Acknowledgements
-<img align="left" width="40" height="40" src="readme/ironhacklogo.png">
+<img align="left" width="25" height="25" src="readme/ironhacklogo.png">
 
 [IronHack](https://www.ironhack.com/en "IronHack main webpage")
 
 ## :love_letter: Contact info
-Any doubt? Advice?  Drop me a line! :smirk:
+Doubts? Advice?  Drop me a line! :smirk:
